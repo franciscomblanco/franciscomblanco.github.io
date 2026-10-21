@@ -4,68 +4,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francisco M. Blanco | Research</title>
+
+  <title>Francisco M. Blanco</title>
+
   <style>
+    :root {
+      --accent: #357c86;
+      --text: #333;
+      --muted: #707070;
+      --background: #fdfdfc;
+      --line: #dddddd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Georgia, serif;
-      color: #333;
-      background: #fff;
       margin: 0;
-      line-height: 1.7;
+      background: var(--background);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.75;
     }
+
     .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 24px;
+      max-width: 950px;
+      margin: auto;
+      padding: 50px 35px;
     }
+
     header {
-      border-bottom: 1px solid #ddd;
       padding-bottom: 25px;
-      margin-bottom: 45px;
+      border-bottom: 1px solid var(--line);
     }
-    h1 { font-size: 36px; font-weight: normal; margin-bottom: 5px; }
+
+    .site-title {
+      font-size: 36px;
+      font-weight: normal;
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      margin: 0 0 25px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
     nav a {
-      margin-right: 25px;
-      color: #444;
+      color: #555;
       text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
     }
-    nav a:hover { color: #187b91; }
-    h2 { font-weight: normal; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
-    footer { margin-top: 80px; font-size: 13px; color: #888; }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding-top: 40px;
+    }
+
+    h2 {
+      font-size: 29px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 65px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 28px 20px;
+      }
+
+      .site-title {
+        font-size: 29px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <div class="container">
+
     <header>
-      <h1>Francisco M. Blanco</h1>
-      <p>Postdoctoral Researcher | Max Planck Institute for Gravitational Physics</p>
+      <h1 class="site-title">Francisco M. Blanco</h1>
+
+      <p class="subtitle">
+        Theoretical Physicist | Gravitational-Wave Theory
+      </p>
+
       <nav>
         <a href="#about">About</a>
+        <a href="#bio">Biography</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <a href="#outreach">Outreach</a>
+        <a href="#contact">CV & Contact</a>
       </nav>
     </header>
+
     <main>
+
       <section id="about">
-        <h2>About Me</h2>
-        <p>I am a postdoctoral researcher at the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) in Potsdam, Germany. My research focuses on the dynamics of compact binary systems and gravitational-wave theory.</p>
+        <h2>About</h2>
+
+        <p>
+          I am a postdoctoral researcher at the
+          Max Planck Institute for Gravitational Physics
+          (Albert Einstein Institute) in Potsdam, Germany.
+        </p>
+
+        <p>
+          My research focuses on analytical approaches to
+          the relativistic two-body problem, including
+          gravitational self-force theory, radiation reaction,
+          and the dynamics of compact binaries.
+        </p>
       </section>
+
+      <section id="bio">
+        <h2>Biography</h2>
+
+        <p>
+          I received my PhD in Physics from Cornell University
+          and am currently a postdoctoral researcher at the
+          Albert Einstein Institute.
+        </p>
+      </section>
+
       <section id="research">
         <h2>Research</h2>
-        <p>My interests include gravitational self-force, analytical methods for relativistic two-body dynamics, and finite-time descriptions of classical evolution.</p>
+
+        <p>
+          My research concerns the analytical description
+          of relativistic compact-binary dynamics and
+          gravitational-wave generation.
+        </p>
       </section>
+
       <section id="publications">
         <h2>Publications</h2>
-        <p>See my <a href="https://inspirehep.net/authors/2170483">Inspire HEP profile</a> for publications.</p>
+
+        <p>
+          My publications are available on
+          <a href="https://inspirehep.net/authors/2170483">
+            Inspire HEP
+          </a>.
+        </p>
       </section>
+
+      <section id="outreach">
+        <h2>Outreach</h2>
+
+        <p>
+          I participate in science communication,
+          academic service, and scientific community activities.
+        </p>
+      </section>
+
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:franciscocnalb@gmail.com">franciscocnalb@gmail.com</a></p>
+        <h2>CV & Contact</h2>
+
+        <p>
+          Email:
+          <a href="mailto:franciscocnalb@gmail.com">
+            franciscocnalb@gmail.com
+          </a>
+        </p>
       </section>
+
     </main>
-    <footer>Francisco M. Blanco</footer>
+
+    <footer>
+      Francisco M. Blanco
+    </footer>
+
   </div>
+
 </body>
 </html>
-  
