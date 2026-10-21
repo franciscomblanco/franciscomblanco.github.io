@@ -22,3 +22,50 @@ section { margin-bottom:55px; }
 .entry h3 { margin:0; }
 footer { border-top:1px solid var(--line); padding-top:20px; color:var(--muted); font-size:13px; }
 @media (max-width:600px) { .container { padding:28px 20px; } .site-title { font-size:29px; } nav { gap:14px; } }
+
+/* Portrait header shared by all pages */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+.portrait {
+  position: relative;
+  width: 155px;
+  height: 155px;
+  flex: 0 0 155px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e7eeed;
+  display: grid;
+  place-items: center;
+}
+.portrait-fallback {
+  color: #699097;
+  font-size: 44px;
+  font-family: Georgia, serif;
+}
+.portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.header-content {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+}
+.header-content nav {
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; gap: 18px; }
+  .portrait { width: 130px; height: 130px; flex-basis: 130px; }
+  .header-content { text-align: center; width: 100%; }
+  .header-content nav { justify-content: center; }
+  .subtitle { margin-bottom: 18px; }
+}
