@@ -74,6 +74,11 @@ footer { border-top:1px solid var(--line); padding-top:20px; color:var(--muted);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   gap: 20px;
-  flex-wrap: wrap;
+}
+
+.site-footer span:last-child {
+  margin-left: auto;
+  text-align: right;
 }
