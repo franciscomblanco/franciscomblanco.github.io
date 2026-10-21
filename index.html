@@ -1,172 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Francisco M. Blanco</title>
-
-  <style>
-    :root {
-      --accent: #357c86;
-      --text: #333;
-      --muted: #707070;
-      --background: #fdfdfc;
-      --line: #dddddd;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.75;
-    }
-
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 50px 35px;
-    }
-
-    header {
-      padding-bottom: 25px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .site-title {
-      font-size: 36px;
-      font-weight: normal;
-      margin: 0;
-      letter-spacing: -0.5px;
-    }
-
-    .subtitle {
-      margin: 0 0 25px;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    nav {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #555;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    main {
-      padding-top: 40px;
-    }
-
-    h2 {
-      font-size: 29px;
-      font-weight: normal;
-      margin-bottom: 25px;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    section {
-      margin-bottom: 65px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding-top: 20px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 28px 20px;
-      }
-
-      .site-title {
-        font-size: 29px;
-      }
-
-      nav {
-        gap: 14px;
-      }
-    }
-  </style>
+  <meta name="description" content="Francisco M. Blanco — theoretical physicist working on gravitational-wave theory and compact-binary dynamics.">
+  <title>About | Francisco M. Blanco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <div class="container">
-
     <header>
-      <h1 class="site-title">Francisco M. Blanco</h1>
-
-      <p class="subtitle">
-        Theoretical Physicist | Gravitational-Wave Theory
-      </p>
-
-<nav>
-  <a href="index.html">About</a>
-  <a href="biography.html">Biography</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="outreach.html">Outreach</a>
-  <a href="contact.html">CV & Contact</a>
-</nav>
+      <h1 class="site-title"><a href="index.html">Francisco M. Blanco</a></h1>
+      <p class="subtitle">Theoretical Physicist | Gravitational-Wave Theory</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="biography.html">Biography</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="contact.html">CV & Contact</a>
+      </nav>
     </header>
-
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-
-    <p>
-      I am a postdoctoral researcher at the
-      Max Planck Institute for Gravitational Physics
-      (Albert Einstein Institute) in Potsdam, Germany.
-    </p>
-
-    <p>
-      My research focuses on analytical approaches to
-      the relativistic two-body problem, including
-      gravitational self-force theory, radiation reaction,
-      and the dynamics of compact binaries.
-    </p>
-
-    <p>
-      You can learn more about my
-      <a href="research.html">research</a>,
-      browse my <a href="publications.html">publications</a>,
-      or read my <a href="biography.html">biography</a>.
-    </p>
-  </section>
-</main>
-
-    <footer>
-      Francisco M. Blanco
-    </footer>
-
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>I am a postdoctoral researcher at the Max Planck Institute for Gravitational Physics (Albert Einstein Institute) in Potsdam, Germany.</p>
+        <p>My research focuses on analytical approaches to the relativistic two-body problem, including gravitational self-force theory, radiation reaction, and the dynamics of compact binaries.</p>
+        <p>You can learn more about my <a href="research.html">research</a>, browse my <a href="publications.html">publications</a>, or read my <a href="biography.html">biography</a>.</p>
+      </section>
+    </main>
+    <footer>Francisco M. Blanco</footer>
   </div>
-
 </body>
 </html>

@@ -1,0 +1,24 @@
+/* Shared styling for all pages */
+:root { --accent:#357c86; --text:#333; --muted:#707070; --background:#fdfdfc; --line:#dddddd; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--background); color:var(--text); font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.75; }
+.container { max-width:950px; margin:auto; padding:50px 35px; }
+header { padding-bottom:25px; border-bottom:1px solid var(--line); }
+.site-title { font-size:36px; font-weight:normal; margin:0; letter-spacing:-.5px; }
+.site-title a { color:var(--text); text-decoration:none; }
+.subtitle { margin:0 0 25px; color:var(--muted); font-size:15px; }
+nav { display:flex; gap:22px; flex-wrap:wrap; }
+nav a { color:#555; text-decoration:none; font-family:Arial,sans-serif; font-size:14px; }
+nav a:hover,nav a[aria-current="page"] { color:var(--accent); }
+nav a[aria-current="page"] { border-bottom:1px solid var(--accent); }
+main { padding-top:40px; min-height:340px; }
+h2 { font-size:29px; font-weight:normal; margin:0 0 25px; }
+h3 { font-size:21px; font-weight:normal; margin:32px 0 10px; }
+p { margin:0 0 20px; }
+a { color:var(--accent); }
+section { margin-bottom:55px; }
+.small-note { color:var(--muted); font-size:15px; }
+.entry { margin:0 0 22px; }
+.entry h3 { margin:0; }
+footer { border-top:1px solid var(--line); padding-top:20px; color:var(--muted); font-size:13px; }
+@media (max-width:600px) { .container { padding:28px 20px; } .site-title { font-size:29px; } nav { gap:14px; } }
