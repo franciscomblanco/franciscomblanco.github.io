@@ -69,3 +69,11 @@ footer { border-top:1px solid var(--line); padding-top:20px; color:var(--muted);
   .header-content nav { justify-content: center; }
   .subtitle { margin-bottom: 18px; }
 }
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
