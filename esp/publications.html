@@ -13,7 +13,12 @@
   .language-switch a { color: inherit; text-decoration: none; opacity: .65; padding: .18rem .3rem; border-radius: .2rem; }
   .language-switch a[aria-current="true"] { opacity: 1; font-weight: 700; text-decoration: underline; text-underline-offset: .2rem; }
   .language-switch a:hover { opacity: 1; }
-</style></head>
+</style>
+<style id="header-alignment-adjustment">
+  /* Lower the text alongside the portrait, without moving the portrait. */
+  .site-header .header-content { position: relative; top: 12px; }
+</style>
+</head>
 <body>
   <div class="container">
     <header class="site-header">
@@ -23,14 +28,14 @@
       </div>
       <div class="header-content">
         <h1 class="site-title"><a href="/">Francisco M. Blanco</a></h1>
-        <p class="subtitle">Theoretical Physicist | General Relativity</p>
+        <p class="subtitle">Físico Teórico | Relatividad General</p>
        <nav aria-label="Main navigation">
-  <a href="/">About</a>
+  <a href="/">Sobre mí</a>
   <a href="/biography">Bio</a>
-  <a href="/research">Research</a>
-  <a href="/publications">Publications</a>
-  <a href="/notes">Notes</a>
-  <a href="/contact">Contact</a>
+  <a href="/research">Investigación</a>
+  <a href="/publications">Publicaciones</a>
+  <a href="/notes">Apuntes</a>
+  <a href="/contact">Contacto</a>
 
       </nav>
       <div class="language-switch-row"><span class="language-switch" role="group" aria-label="Language / Idioma"><a href="../publications.html" lang="en" hreflang="en">EN</a><span aria-hidden="true">/</span><a href="publications.html" lang="es" hreflang="es" aria-current="true">ESP</a></span></div>
